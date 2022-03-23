@@ -17,6 +17,6 @@ Watch my [Demo Video!]
   * animation & game designing
 * [Name Popularity Searching System]
   * data structure
-* [Boggle Game solver]
+* [Boggle Game solver](https://github.com/pe11te18r/MystanCodeProjects/tree/main/boggle_game_solver)
   * recursive functions
   
