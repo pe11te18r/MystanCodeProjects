@@ -13,7 +13,7 @@ Watch my [Demo Video!]
   * image processing
 * [Breakout Game](https://github.com/pe11te18r/MystanCodeProjects/tree/main/break_out_game)
   * animation & game designing
-* [Name Popularity Searching System]
+* [Name Popularity Searching System](https://github.com/pe11te18r/MystanCodeProjects/tree/main/name_searching_system)
   * data structure
 * [Boggle Game solver](https://github.com/pe11te18r/MystanCodeProjects/tree/main/boggle_game_solver)
   * recursive functions
