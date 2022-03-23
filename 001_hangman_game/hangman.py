@@ -21,6 +21,7 @@ def main():
     """
     Algorithm:先把首次猜謎介面做出來，開始猜之後進入hanging進行猜謎
     """
+    hangman_printing(N_TURNS)
     print('The word looks like: ', end='')
     ans = random_word()
     length = len(ans)
@@ -35,9 +36,60 @@ def main():
         print('illegal format.')
         guess = input('Your guess: ')
         check = len(guess)
-    guess = guess.upper()   # case-insensitivity
+    guess = guess.upper()  # case-insensitivity
     hanging(guess, length, ans, N_TURNS, empty_string)
     print('The word was: ' + ans)  # 無論對錯最後都要公佈答案
+
+
+def hangman_printing(lives):
+    print('========')
+    if lives == N_TURNS:
+        for i in range(6):
+            print('|')
+    elif lives == N_TURNS - 1:
+        print('|    |')
+        for i in range(5):
+            print('|')
+    elif lives == N_TURNS - 2:
+        print('|    |')
+        print('|   ( )')
+        for i in range(4):
+            print('|')
+    elif lives == N_TURNS - 3:
+        print('|    |')
+        print('|   ( )')
+        for i in range(2):
+            print('|    #')
+        for i in range(2):
+            print('|')
+    elif lives == N_TURNS - 4:
+        print('|    |')
+        print('|   ( )')
+        print('|  ~ # ~')
+        print('|    #')
+        for i in range(2):
+            print('|')
+    elif lives == N_TURNS - 5:
+        print('|    |')
+        print('|   ( )')
+        print('|  ~ # ~')
+        print('|    #')
+        print('|   / \\ ')
+        print('|')
+    elif lives == N_TURNS - 6:
+        print('|    |')
+        print('|  (0.0)')
+        print('|  ~ # ~')
+        print('|    #')
+        print('|   / \\ ')
+        print('|')
+    else:
+        print('|    |')
+        print('|   (X)')
+        print('|  ~ # ~')
+        print('|    #')
+        print('|   / \\ ')
+        print('|   Lose')
 
 
 def random_word():
@@ -83,7 +135,7 @@ def hanging(a, b, c, d, e):
                 count += 1
                 if a != template1:  # 如果說本次猜這個字是之前還沒猜過的字，表示多猜到一個！加上總字元數統計
                     total += 1
-            elif template == template1: # 本次沒猜到，但之前猜對的字，就把它串上去
+            elif template == template1:  # 本次沒猜到，但之前猜對的字，就把它串上去
                 now += template1
             else:  # 本次猜錯，之前也沒猜到，串上‘-’
                 now += '-'
@@ -96,9 +148,11 @@ def hanging(a, b, c, d, e):
             print('You win!!')
             break
         elif d == 0:  # 機會用完死掉了，跳出猜題迴圈
+            hangman_printing(d)
             print('You are completely hung : (')
             break
         else:
+            hangman_printing(d)
             print('The word looks like: ' + now)
             storage = now  # 更新猜題狀況
             print('You have ' + str(d) + ' guesses left.')
