@@ -9,7 +9,7 @@ Watch my [Demo Video!](https://drive.google.com/drive/folders/1dfG-JLovaWf20vD45
   * python semantics & syntax
 * [Weather Master](https://github.com/pe11te18r/MystanCodeProjects/tree/main/001_weather_master)
   * python semantics & syntax
-* [MyPhotoshop](https://github.com/pe11te18r/MystanCodeProjects/tree/main/001_image_process)
+* [MyPhotoshop](https://github.com/pe11te18r/MystanCodeProjects/tree/main/001_myphotoshop)
   * image processing
 * [Pedestrian Removing Application](https://github.com/pe11te18r/MystanCodeProjects/tree/main/my_photoshop)
   * image processing
