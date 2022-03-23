@@ -37,6 +37,9 @@ def main():
                     start = time.time()
                     final_count = boggle(alphabet_1, alphabet_2, alphabet_3, alphabet_4)
                     print(f'There are {final_count} words in total.')
+                    end = time.time()
+                    print('----------------------------------')
+                    print(f'The speed of your boggle algorithm: {end - start} seconds.')
                 else:
                     print('Illegal input')
             else:
@@ -51,9 +54,7 @@ def main():
     #       TODO:      #
     #                  #
     ####################
-    end = time.time()
-    print('----------------------------------')
-    print(f'The speed of your boggle algorithm: {end - start} seconds.')
+
 
 
 def valid_data(lst):
