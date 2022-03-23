@@ -7,7 +7,7 @@ Watch my [Demo Video!]
 ## Project Source Codes:
 * [Hangman Game](https://github.com/pe11te18r/MystanCodeProjects/tree/main/001_hangman_game)
   * python semantics & syntax
-* [Weather Master]
+* [Weather Master](https://github.com/pe11te18r/MystanCodeProjects/tree/main/001_weather_master)
   * python semantics & syntax
 * [MyPhotoshop - Pedestrian Removing Application](https://github.com/pe11te18r/MystanCodeProjects/tree/main/my_photoshop)
   * image processing
