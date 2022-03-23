@@ -9,7 +9,9 @@ Watch my [Demo Video!]
   * python semantics & syntax
 * [Weather Master](https://github.com/pe11te18r/MystanCodeProjects/tree/main/001_weather_master)
   * python semantics & syntax
-* [MyPhotoshop - Pedestrian Removing Application](https://github.com/pe11te18r/MystanCodeProjects/tree/main/my_photoshop)
+* [MyPhotoshop](https://github.com/pe11te18r/MystanCodeProjects/tree/main/my_photoshop)
+  * image processing
+* [Pedestrian Removing Application](https://github.com/pe11te18r/MystanCodeProjects/tree/main/my_photoshop)
   * image processing
 * [Breakout Game](https://github.com/pe11te18r/MystanCodeProjects/tree/main/break_out_game)
   * animation & game designing
